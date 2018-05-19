@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* media querie - min-width:551px and max-width:1023px */
+/* ====================== Body ====================== */
+ul, li {
+	font-size: 11pt;
+}
+
+#footer {
+  font-size: 8pt;
+}
+/* ====================== Navigation ====================== */
+#pageTitle h1 {
+  padding: 20px;
+}
+#pageTitle h1 a {
+  font-size: 18pt;
+}
+#breadcrumb {
+  font-size: 25px;
+  width: 100%;
+}
+#breadcrumb li a {
+    text-align: left;
+}
+/* ====================== Restaurant Filtering ====================== */
+/*add responsive to make filter options menues next each other and wrap when the viewport is too small */
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-options h3 {
+  width: 100%;
+  padding: 5px 0;
+}
+.filter-options select {
+  font-size: 10pt;
+  width: 40%;
+}
+/*add order for options menues at the viewport */
+#neighborhoods-select {
+  order: 1;
+}
+#cuisines-select {
+  order: 2;
+}
+/* ====================== Restaurant Listing ====================== */
+/*add responsive to make restaurant's list wrap when the viewport is too small */
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*change the width and height of the restaurant's list to be responsive with the viewport*/
+#restaurants-list li {
+  padding: 0 13px 25px 13px;
+  width: 25%;
+  min-height: 250px;
+  max-height: 320px
+}
+/*change the height of the restaurant's list img to be responsive with the viewport and not overlap*/
+#restaurants-list .restaurant-img {
+  max-height: 150px;
+  min-height: 118px;
+}
+#restaurants-list li h1 {
+  font-size: 12pt;
+  text-align: center;
+  margin: 15px 0 10px;
+}
+#restaurants-list p {
+  font-size: 11pt;
+}
+#restaurants-list li a {
+  font-size: 12pt;
+  margin: 10px;
+}
+
+/* ====================== Restaurant Details ====================== */
+/*add responsive to make main contents side by side when the viewport is small like for ipad*/
+.inside #maincontent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inside #map-container {
+  width: 100%;
+  height: 35%; //= 260 PX
+  order:1;
+}
+.inside #footer {
+  width: 100%;
+}
+#restaurant-name {
+	font-size: 16pt;
+}
+#restaurant-container {
+  padding: 450px 40px 30px;
+	width: 100%;
+  order: 2;
+}
+#reviews-container h3 {
+  font-size: 16pt;
+}
+#reviews-container {
+  width: 100%;
+  order: 3;
+}

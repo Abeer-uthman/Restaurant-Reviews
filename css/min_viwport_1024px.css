@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* media querie - min-width of viewport :1024px */
+
+/* ====================== Body ====================== */
+/*stop the max width of the page at max 1000px and put margin around*/
+body {
+	width: 1024px;
+	margin: auto;
+}
+
+ul, li {
+	font-size: 12pt;
+}
+
+#footer {
+  font-size: 10pt;
+	width: 974px;
+	margin: auto;
+
+}
+/* ====================== Navigation ====================== */
+#pageTitle h1 {
+  padding: 20px;
+}
+#pageTitle h1 a {
+  font-size: 20pt;
+}
+#breadcrumb {
+  font-size: 30px;
+	width:calc (50%-40px);
+}
+
+/* ====================== Restaurant Listing ====================== */
+/*add responsive to make restaurant's list wrap when the viewport is too small */
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*change the width and height of the restaurant's list to be responsive with the viewport*/
+#restaurants-list li {
+	padding: 0 16px 25px 16px;
+	width: 26%;
+	min-height: 250px;
+	max-height: 320px
+}
+/*change the height of the restaurant's list img to be responsive with the viewport and not overlap*/
+#restaurants-list .restaurant-img {
+max-height: 150px;
+min-height: 118px;
+}
+#restaurants-list li h1 {
+  font-size: 14pt;
+  text-align: center;
+  margin: 15px 0 10px;
+}
+#restaurants-list p {
+  font-size: 12pt;
+}
+#restaurants-list li a {
+	font-size: 16pt;
+  margin: 10px;
+}
+
+/* ====================== Restaurant Details ====================== */
+/* make the font size of review as restaurant-name*/
+#reviews-container h3 {
+  font-size: 20pt;
+}
+.inside header {
+  width: 1024px;
+}
+/*add responsive to make main contents side by side when the viewport is small like for ipad*/
+.inside #maincontent {
+  display: flex;
+  flex-wrap: wrap;
+}
+#restaurant-container {
+	width: 50%;
+  order: 1;
+}
+.inside #map-container {
+  width: 50%;
+  order:2;
+  right:0;
+	overflow: auto;
+}
+#reviews-container h3 {
+  font-size: 16pt;
+}
+#reviews-container {
+  width: 100%;
+  order: 3;
+}
